@@ -39,7 +39,7 @@
   #gnb > ul > li:nth-child(5){
       margin-right: 0;
   }
-  #gnb > ul > li:first-child > a { color: #baa56f;}
+  #gnb > ul > li:nth-child(2) > a { color: #baa56f;}
   #gnb > ul > li:last-child { margin-right: 0;}
   
   #gnb > ul > li a { color: #888; }
@@ -184,13 +184,13 @@
 .footer_info img{
     position: absolute;
     left: 0;
-    top: 90px;
+    top: 95px;
 }
 .address{
     position: absolute;
     left: 250px;
-    top: 65px;
-    font-size: 16px;
+    top: 70px;
+    font-size: 14px;
 }
 .address ul li{
     margin: 5px 0;

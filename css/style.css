@@ -32,6 +32,7 @@ body {
 #gnb {
   position: absolute;
   right: 0; top: 40px;
+  z-index: 10;
 }
 #gnb > ul > li {
   display: inline-block;
@@ -39,17 +40,21 @@ body {
   margin-left: 20px;
   font-weight: bold;
   font-size: 16px;
+  text-align: center;
 }
 #gnb > ul > li:nth-child(5){
     margin-right: 0;
 }
-#gnb > ul > li:first-child > a { color: #baa56f;}
+#gnb > ul > li:nth-child(1) > a { color: #baa56f;}
 #gnb > ul > li:last-child { margin-right: 0;}
 
-#gnb > ul > li a { color: #888; }
-
-#gnb > ul > li a:hover { color: #baa56f; }
-
+#gnb > ul > li a {
+    color: #888;
+    display: block;
+  }
+#gnb > ul > li a:hover{
+  color: #baa56f;
+}
 /* 비주얼 */
 #visual {
   position: relative;
@@ -101,7 +106,7 @@ body {
 
 /* 공지사항 */
 #notice {
-  background: #71663e;
+  background: rgb(20, 96, 119);
   color: #fff;
 }
 #notice > .notice-container {
@@ -298,13 +303,13 @@ section .row { margin-top: 30px;}
 .footer_info img{
   position: absolute;
   left: 0;
-  top: 90px;
+  top: 95px;
 }
 .address{
   position: absolute;
   left: 250px;
-  top: 65px;
-  font-size: 16px;
+  top: 70px;
+  font-size: 14px;
 }
 .address ul li{
   margin: 5px 0;
