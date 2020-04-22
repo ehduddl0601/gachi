@@ -27,7 +27,7 @@ body {
 }
 #main_header > h1 {
   position: absolute;
-  left: 0; top: 35px;
+  left: 0; top: 25px;
 }
 #gnb {
   position: absolute;

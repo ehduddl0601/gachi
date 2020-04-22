@@ -23,11 +23,52 @@
   }
   #main_header > h1 {
     position: absolute;
-    left: 0; top: 35px;
+    left: 0; top: 25px;
   }
   #gnb {
     position: absolute;
-    right: 0; top: 40px;
+    right: 0; top: 20px;
+    z-index: 10;
+  }
+  #gnb li ul{
+    background: rgb(109,109,109);
+  display:none;
+  height:auto;
+  padding:0px;
+  margin: 0;
+  border:0px;
+  position:absolute;
+  width:170px;
+  z-index:200;
+  }
+  #gnb li:hover ul{
+    display: block;
+  }
+  #gnb li li{
+    background-color: #333;
+    display:block;
+  float:none;
+  margin:0;
+  padding:0;
+  width:170px;
+  }
+  #gnb li:hover li a{
+    background:none;
+    }
+   #gnb li ul a{
+      display:block;
+      height:50px;
+      font-size:12px;
+      font-style:normal;
+      margin:0px;
+      padding: 10px 0;
+      text-align:left;
+      }
+  #gnb li ul a:hover, #gnb li ul li:hover a{
+        background: rgb(71,71,71);
+        border:0px;
+        color:#ffffff;
+        text-decoration:none;
   }
   #gnb > ul > li {
     display: inline-block;
@@ -35,6 +76,7 @@
     margin-left: 20px;
     font-weight: bold;
     font-size: 16px;
+    text-align: center;
   }
   #gnb > ul > li:nth-child(5){
       margin-right: 0;
@@ -42,8 +84,15 @@
   #gnb > ul > li:nth-child(2) > a { color: #baa56f;}
   #gnb > ul > li:last-child { margin-right: 0;}
   
-  #gnb > ul > li a { color: #888; }
-  #gnb > ul > li a:hover { color: #baa56f; }
+  #gnb > ul > li a {
+    padding: 15px;
+      color: #888;
+      display: block;
+      text-align: left;
+    }
+  #gnb > ul > li a:hover{
+    color: #baa56f;
+  }
 
   #visual_wrap{
       position: relative;
