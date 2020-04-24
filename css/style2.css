@@ -1,4 +1,4 @@
-/* 서브 스타일 */
+/* 서브2 스타일 */
 
 * {
     margin: 0; padding: 0;
@@ -147,7 +147,7 @@
     text-align: center;
     background: #f9f9f9;
 }
-#info_menu > ul li:nth-child(1){
+#info_menu > ul li:nth-child(2){
     border-right: none;
     background: #71663e;
 }
@@ -158,34 +158,40 @@
     color: #666;
     padding: 0px 150px;
 }
-#info_menu > ul li:nth-child(1) a{
+#info_menu > ul li:nth-child(2) a{
     color: white;
 }
 #contents{
     width: 1200px;
-    height: 530px;
+    height: 740px;
     /* outline: 2px solid red; */
     margin: 0 auto;
     position: relative;
+    box-sizing: border-box;
 }
-.ceo{
-    position: absolute;
-    left: 0;
-    top: 100px;
+#contents .c_visual{
+    margin: 50px 0;
 }
-.hello{
-    position: absolute;
-    right: 100px;
-    top: 115px;
+#contents table{
+    border-collapse: collapse;
+    margin-top: 50px;
+    width: 1200px;
+    font-size: 15px;
 }
-.hello p{
-    font-size: 16px;
+#contents table tr{
+    height: 60px;
 }
-.hello h3{
-    font-size: 26px;
-    color: #71663e;
-    margin-bottom: 10px;
+#contents table td{
+    border: 1px solid #ddd;
+    padding-left: 20px;
 }
+#contents .c_title{
+    text-align: center;
+    width: 150px;
+    padding-left: 0px;
+    background-color: #f9f9f9;
+}
+
 #main_footer{
     width: 1200px;
     /* outline: 2px solid red; */

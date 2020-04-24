@@ -82,7 +82,7 @@
   #gnb > ul > li:nth-child(5){
       margin-right: 0;
   }
-  #gnb > ul > li:nth-child(3) > a { color: #baa56f;}
+  #gnb > ul > li:nth-child(4) > a { color: #baa56f;}
   #gnb > ul > li:last-child { margin-right: 0;}
   
   #gnb > ul > li a {
@@ -140,7 +140,7 @@
     margin-top: 50px;
 }
 #info_menu > ul li{
-    width: 300px;
+    width: 400px;
     line-height: 50px;
     float: left;
     display: block;
@@ -148,7 +148,7 @@
     text-align: center;
     background: #f9f9f9;
 }
-#info_menu > ul li:nth-child(1){
+#info_menu > ul li:nth-child(3){
     border-right: none;
     background: #71663e;
 }
@@ -157,58 +157,60 @@
 }
 #info_menu > ul li a{
     color: #666;
-    padding: 0px 100px;
+    padding: 0px 150px;
 }
-#info_menu > ul li:nth-child(1) a{
+#info_menu > ul li:nth-child(3) a{
     color: white;
 }
 #contents{
     width: 1200px;
-    height: 1100px;
+    height: 400px;
     /* outline: 2px solid red; */
     margin: 0 auto;
     position: relative;
     box-sizing: border-box;
 }
-#contents h3{
-    text-align: center;
-    font-size: 32px;
-    margin: 100px 0;
-}
-.p_title{
-    margin-top: 50px;
-}
-#p_wrap{
+#contents table{
     width: 1200px;
-    height: 550px;
-    clear: both;
-    /* position: relative; */
-}
-#p_wrap .person{
-    text-align: center;
-    float: left;
-    width: 300px;
-}
-#p_wrap:nth-of-type(2) .person{
     margin-top: 50px;
+    border-collapse: collapse;
+    font-size: 12px;
+    text-align: center;
+    color: #333;
 }
-.past{
-    margin-top: 15px;
+#contents table tr{
+    height: 40px;
+}
+#contents table th{
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 4px double #d8d8d8;
+    height: 50px;
     font-size: 14px;
 }
-.past ~ p{
-     font-size: 14px;
+#contents table th:nth-child(1){
+    width: 70px;
 }
-.name{
-    font-size: 20px;
-    margin-top: 15px;
-    font-weight: bold;
+#contents table th:nth-child(2){
+    width: 800px;
 }
-.position{
-    margin-top: 5px;
-    font-size: 16px;
+#contents table th:nth-child(3){
+    width: 150px;
 }
-
+#contents table th:nth-child(4){
+    width: 100px;
+}
+#contents td{
+    /* border: 1px solid black; */
+    height: 45px;
+    border-bottom: 1px solid #d8d8d8;
+}
+#contents table tr td:nth-child(2){
+    text-align: left;
+    padding-left: 50px;
+}
+#contents a:hover{
+    text-decoration: underline;
+}
 #main_footer{
     width: 1200px;
     /* outline: 2px solid red; */

@@ -148,7 +148,7 @@
     text-align: center;
     background: #f9f9f9;
 }
-#info_menu > ul li:nth-child(1){
+#info_menu > ul li:nth-child(2){
     border-right: none;
     background: #71663e;
 }
@@ -159,12 +159,12 @@
     color: #666;
     padding: 0px 150px;
 }
-#info_menu > ul li:nth-child(1) a{
+#info_menu > ul li:nth-child(2) a{
     color: white;
 }
 #contents{
     width: 1200px;
-    height: 600px;
+    height: 870px;
     /* outline: 2px solid red; */
     margin: 0 auto;
     position: relative;
@@ -210,6 +210,12 @@
 }
 #contents a:hover{
     text-decoration: underline;
+}
+#contents tr:nth-of-type(2) td{
+    background: #f6f6f6;
+}
+#contents tr:nth-of-type(2) td:nth-of-type(2){
+    font-weight: bold;
 }
 #main_footer{
     width: 1200px;
